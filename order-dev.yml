@@ -32,17 +32,6 @@ feign:
       default:
         connectTimeout: 10000
         readTimeout: 10000
-# 自定义
-redis:
-  key:
-    prefix:
-      authCode: "username:%s"
-      loginToken: "lovingliu:%s"
-    expire:
-      authCodeExpire: 120
-      loginTokenExpire: 604800
-  lock:
-    timeout: 10000
 # redis
 redis:
   auth-code-prefix: "username:%s"
