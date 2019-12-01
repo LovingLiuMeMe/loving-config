@@ -19,6 +19,12 @@ spring:
         max-wait: -1ms
         max-idle: 10
         min-idle: 0
+  # 配置信息更新 广播（消息队列）
+  rabbitmq:
+    host: 49.235.110.134
+    port: 5672
+    username: admin
+    password: admin
 # mybatis扫描
 mybatis:
   mapper-locations: classpath:mapper/*.xml
@@ -32,6 +38,10 @@ feign:
       default:
         connectTimeout: 10000
         readTimeout: 10000
+# log等级
+logging:
+  level:
+    org.springframework.cloud.bus: debug
 # redis
 redis:
   auth-code-prefix: "username:%s"
