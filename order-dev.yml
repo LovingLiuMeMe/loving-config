@@ -1,7 +1,5 @@
 # 在注册中心显示的服务名称
 spring:
-  application:
-    name: order
   # 数据库
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -21,14 +19,6 @@ spring:
         max-wait: -1ms
         max-idle: 10
         min-idle: 0
-# 指定注册中心的地址 将服务注册到注册中心上
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:1000/eureka,http://127.0.0.1:1001/eureka
-  instance:
-    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
-    prefer-ip-address: true
 # mybatis扫描
 mybatis:
   mapper-locations: classpath:mapper/*.xml
