@@ -64,4 +64,4 @@ redis:
   login-token-expire: 604800
   order-lock: 10000
   user-cookie-key: "lovingUser"
-  admin-cookie-key: "lovingAdmin"
+  admin-cookie-key: "lovingAdmin123"
