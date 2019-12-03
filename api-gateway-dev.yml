@@ -11,3 +11,9 @@ zuul:
     myProduct:
       path: /myProduct/**
       serviceId: product
+# 注意就算把下面的配置删除/增加，不重启项目项目没办法做任何更改      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
