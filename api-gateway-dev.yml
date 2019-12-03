@@ -6,6 +6,19 @@ spring:
     port: 5672
     username: admin
     password: admin
+  # redis缓存
+  redis:
+    host: 49.235.110.134
+    database: 0
+    port: 6379
+    password: lovingliu
+    timeout: 3000ms
+    jedis:
+      pool:
+        max-active: 10
+        max-wait: -1ms
+        max-idle: 10
+        min-idle: 0
 zuul:
   ignored-patterns:
     - /product/**
