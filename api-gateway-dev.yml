@@ -1,5 +1,11 @@
 server:
   port: 8000
+spring:
+  rabbitmq:
+    host: 49.235.110.134
+    port: 5672
+    username: admin
+    password: admin
 zuul:
   routes:
     myProduct:
