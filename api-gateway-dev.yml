@@ -21,3 +21,11 @@ management:
     web:
       exposure:
         include: "*"
+redis:
+  auth-code-prefix: "username:%s"
+  login-token-prefix: "lovingliu:%s"
+  auth-code-expire: 120
+  login-token-expire: 604800
+  order-lock: 10000
+  user-cookie-key: "lovingUser"
+  admin-cookie-key: "lovingAdmin"
