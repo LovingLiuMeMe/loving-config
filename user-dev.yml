@@ -1,0 +1,52 @@
+# 在注册中心显示的服务名称
+spring:
+  # 数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/loving_mall?characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+  # 邮件发送
+  mail:
+    host: smtp.126.com
+    port: 25
+    username: lovingliu@126.com
+    password: liubo1314520TY
+    protocol: smtp
+    default-encoding: UTF-8
+    # 自己配置
+    from: lovingliu@126.com
+  # redis缓存
+  redis:
+    host: 49.235.110.134
+    database: 0
+    port: 6379
+    password: lovingliu
+    timeout: 3000ms
+    jedis:
+      pool:
+        max-active: 10
+        max-wait: -1ms
+        max-idle: 10
+        min-idle: 0
+  # 统一配置中心链接 rabbitMq
+  rabbitmq:
+    host: 49.235.110.134
+    port: 5672
+    username: admin
+    password: admin
+# mybatis扫描
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+# 运行端口
+server:
+  port: 4000
+# redis
+redis:
+  auth-code-prefix: "username:%s"
+  login-token-prefix: "lovingliu:%s"
+  auth-code-expire: 120
+  login-token-expire: 604800
+  order-lock: 10000
+  user-cookie-key: "lovingUser"
+  admin-cookie-key: "lovingAdmin"
