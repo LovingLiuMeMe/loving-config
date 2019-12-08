@@ -21,6 +21,12 @@ spring:
     default-encoding: UTF-8
     # 自己配置
     from: lovingliu@126.com
+  # 配置信息更新 广播（消息队列）
+  rabbitmq:
+    host: 49.235.110.134
+    port: 5672
+    username: admin
+    password: admin
 redis:
   auth-code-prefix: "username:%s"
   login-token-prefix: "lovingliu:%s"
