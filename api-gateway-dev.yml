@@ -44,6 +44,6 @@ redis:
   order-lock: 10000
   user-cookie-key: "lovingUser"
   admin-cookie-key: "lovingAdmin"
-# 统一异常处理
+# zuul统一异常处理
 error:
   path: /error 
