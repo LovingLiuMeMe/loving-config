@@ -24,6 +24,7 @@ zuul:
     - /product/**
     - /order/**
     - /user/**
+    - /myOrder/**
   routes:
     myProduct:
       path: /mallProduct/**
