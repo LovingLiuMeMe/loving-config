@@ -31,6 +31,7 @@ zuul:
     order: /mallOrder/**
     user: /mallUser/**
     activity: /mallActivity/**
+    auth: /mallActivity/**
 # 注意就算把下面的配置删除/增加，不重启项目项目没办法起左右(@RefreshScope)
 management:
   endpoints:
